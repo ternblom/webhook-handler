@@ -6,6 +6,7 @@ var logs = require("./lib/file-system");
 
 var indexRouter = require("./routes/index");
 var logsRouter = require("./routes/logs");
+var twilioRouter = require("./routes/twilio");
 
 var app = express();
 
@@ -17,6 +18,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api/v1", indexRouter);
 app.use("/api/v1/logs", logsRouter);
+app.use("/api/v1/twilio", twilioRouter);
 
 app.use(function (err, req, res, next) {
   logs.error(err.stack);
