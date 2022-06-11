@@ -21,5 +21,23 @@ TWILIO_VERIFY_SERVICE=
 
 # endpoints
 
+## GET
+
 - **DOMAIN_URL**/api/v1 -> to check if the api is working
 - **DOMAIN_URL**/api/v1/logs -> to send data
+
+## POST
+
+- **DOMAIN_URL**/api/v1/twilio/verify -> to send a verification code
+
+> Body paramters:
+>
+> - number
+
+- **DOMAIN_URL**/api/v1/twilio/message -> to send a message
+  Body paramters:
+
+> Body paramters:
+>
+> - number
+> - message
