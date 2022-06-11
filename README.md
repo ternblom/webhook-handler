@@ -10,6 +10,10 @@
 NODE_ENV=development
 PORT=3500
 LOGS_FOLDER=/usr/src/webhook-handler/logs
+ACCOUNT_SID=
+AUTH_TOKEN=
+MY_TWILIO_NUMBER=
+TWILIO_VERIFY_SERVICE=
 ```
 
 3. Change the PORT if needed
