@@ -1,8 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var path = require("path");
 var logs = require("../lib/file-system");
-var ROOT = path.resolve(__dirname, "..");
 
 router.get("/", async function (req, res, next) {
   try {
